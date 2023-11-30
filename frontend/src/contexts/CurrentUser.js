@@ -1,10 +1,9 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 
 
 export const CurrentUser = createContext()
 
-__
-___
+
 function CurrentUserProvider({ children }) {
 
     const [currentUser, setCurrentUser] = useState(null)
